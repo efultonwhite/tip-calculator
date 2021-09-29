@@ -92,6 +92,7 @@ p {
 .text-field {
     color: #00474b;
 }
+
 .select-tip-percentage {
     display: flex;
     flex-wrap: wrap;
@@ -108,14 +109,21 @@ p {
     background-color: #00474b;
     color: #ffffff;
 
+    border: none;
     border-radius: 2px;
 
     width: 45px;
     height: 20px;
 }
+.button:focus {
+    background-color: #9fe8df;
+    color: #00474b;
+}
 .custom {
     background-color: #f1f9fa;
     color: #00474b;
+    font-size: 10px;
+    text-align: center;
 }
 .right-side {
     display: flex;
@@ -173,18 +181,23 @@ p {
     color: #00474b;
 
     background-color: #0d686d;
+    border: none;
+    border-radius: 2px;
 
     width: 125px;
     height: 18px;
 
     margin-left: 15px;
 }
+#reset:focus {
+    background-color: #9fe8df;
+}
 
 @media only screen and (max-width: 600px) {
     .calc-container {
         display: flex;
         flex-direction: column;
-         width: 100%;
+         width: 200px;
          height: 100%;
          padding-bottom: 10px;
     }
