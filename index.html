@@ -25,20 +25,23 @@
       <div class="left-side">
         <p class="text-field">Bill</p>
         <div class="bill-number-field">
-          <input type="text" placeholder="0" class="bill-number-field">
+          <img src="./images/icon-dollar.svg" alt="">
+          <!-- <i></i> -->
+          <input type="text" placeholder="0" id="bill" class="bill-number-field">
         </div>
         <p class="text-field">Select Tip %</p>
         <div class="select-tip-percentage">
-          <button class="button">5%</button>
-          <button class="button">10%</button>
-          <button class="button">15%</button>
-          <button class="button">25%</button>
-          <button class="button">50%</button>
-          <input type="text" placeholder="Custom" class="button custom">
+          <button id="p5" data-num=".05" class="button">5%</button>
+          <button id="p10" data-num=".10" class="button">10%</button>
+          <button id="p15" data-num=".15" class="button">15%</button>
+          <button id="p25" data-num=".25" class="button">25%</button>
+          <button id="p50" data-num=".50" class="button">50%</button>
+          <input type="text" placeholder="Custom" id="customField" class="button custom">
         </div>
         <p class="text-field">Number of People</p>
         <div class="number-field ">
-          <input type="text" placeholder="0" class="number-field">
+          <img src="./images/icon-person.svg" alt="">
+          <input type="text" placeholder="0" id="nop" class="number-field">
         </div>
       </div>
       <div class="right-side">
@@ -47,68 +50,21 @@
             <h2>Tip Amount</h2>
             <p class="person">/ person</p>
            </div>
-          <div class="zeros">$0.00</div> 
+          <div id="tipDisplay"class="zeros">$0.00</div> 
         </div>
         <div class="right-side-div">
           <div class="text">
             <h2>Total</h2>
             <p class="person">/ person</p>
           </div>
-        <div class="zeros">$0.00</div>
+        <div id="totalDisplay" class="zeros">$0.00</div>
         </div>
         <button id="reset">RESET</button>
         <!-- <div id="reset">RESET</div> -->
       </div>
     </div>
   </main>
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-  <!-- Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset -->
-  
+  <script  src="script.js"></script>
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
