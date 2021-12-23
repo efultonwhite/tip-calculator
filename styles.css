@@ -25,7 +25,9 @@ p {
     color: #ffffff;
 }
 
-
+input {
+    
+}
 
 .calc-container {
     display: flex;
@@ -61,7 +63,7 @@ p {
     text-align: end;
     padding-left: 5px;
     padding-right: 5px;
-position: relative;
+    position: relative;
 
 
     background-color: #f3f8fb;
